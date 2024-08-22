@@ -1,0 +1,26 @@
+body {
+  margin: auto;
+  padding: auto;
+  background-color: #3c7bd3;
+}
+h1 {
+  text-align: center;
+}
+.flex-main {
+  display: flex;
+  height: 300px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.flex-main > div {
+  box-shadow: 0 12px 16px 0 #fb0cef3d, 0 17px 50px 0 #fb0de733;
+
+  background-color: #6eddb3;
+  width: 100px;
+
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
