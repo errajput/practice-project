@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input-Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <h1>Student Registration Form</h1>
+        <hr />
+        <br /><br />
+        <div class="name">
+          <label for="name">First Name:- </label>
+          <input type="text" name="First Name" placeholder="Firstname" />
+        </div>
+        <div class="lastname">
+          <label for="name">Last Name:- </label>
+
+          <input type="text" name="Last Name" placeholder="Lastname" />
+        </div>
+        <div class="email">
+          <label for="name">Email:- </label>
+          <input
+            type="text"
+            id="email"
+            name="Email"
+            placeholder=" Enter Email"
+          />
+        </div>
+        <div class="pass">
+          Password:-
+          <input
+            type="Password"
+            id="pass"
+            name="pass"
+            placeholder="Enter password"
+          />
+        </div>
+        <div class="re-type">
+          Re-type password:-
+          <input
+            type="Password"
+            id="repass"
+            name="repass"
+            placeholder="re-Password"
+          />
+        </div>
+
+        <div class="course">
+          <label for="course">course:-</label>
+          <select name="course" id="course">
+            <option value="Course">Course</option>
+            <option value="Course">B.Tech</option>
+            <option value="Course">BSc</option>
+            <option value="Course">BBA</option>
+            <option value="Course">B.Com</option>
+            <option value="Course">BCA</option>
+          </select>
+        </div>
+        <div class="gender">
+          <label for="gender"> Gender:-</label>
+          <input type="radio" name="Male" />Male
+          <input type="radio" name="Female" />Female
+          <input type="radio" name="Other" />Other
+        </div>
+        <div class="phone">
+          <label for="phone">Phone:-</label>
+          <input type="text" name="country code" value="+91" size="2" />
+          <input type="text" name="phone" size="10" /> <br />
+        </div>
+        <div class="address">
+          Address:-
+          <br />
+          <textarea cols="80" rows="5" value="address"> </textarea>
+        </div>
+
+        <div class="registerbtn">
+          <button type="submit">Register</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
