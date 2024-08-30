@@ -30,16 +30,19 @@ nav ul li a:hover {
   color: rgb(22, 7, 36);
 }
 .container {
-  padding: 2rem;
-  margin: 5rem;
+  width: 80%;
+  margin: auto;
+  max-width: 50rem;
+  /* padding: 2rem;
+  margin: 5rem; */
 }
 img {
   border-radius: 50%;
-  height: 20rem;
+
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 20rem;
 }
 .skills-container {
   display: flex;
@@ -59,10 +62,9 @@ footer {
 @media screen and (max-width: 850px) {
   img {
     border-radius: 50%;
-    height: 13rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 15rem;
   }
 }
