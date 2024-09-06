@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Left half empty by keeping flex space for it */
+.container::before {
+  content: "";
+  flex: 1; /* This will keep the left side empty */
+}
+
+/* Tabs section on the right */
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  max-width: 250px;
+}
+
+.tabs button {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.tabs button.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Content area */
+.content {
+  margin-right: 270px; /* Adjust this to ensure content stays on the right side */
+  max-width: 40%; /* Limits content width to the right half */
+  font-size: 18px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .tabs {
+    right: 10px;
+    max-width: 200px;
+  }
+
+  .tabs button {
+    font-size: 18px;
+  }
+
+  .content {
+    margin-right: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    right: 10px;
+    max-width: 150px;
+  }
+
+  .tabs button {
+    font-size: 16px;
+  }
+
+  .content {
+    margin-right: 180px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs {
+    right: 10px;
+    max-width: 120px;
+  }
+
+  .tabs button {
+    font-size: 14px;
+  }
+
+  .content {
+    margin-right: 140px;
+    font-size: 14px;
+  }
+}
