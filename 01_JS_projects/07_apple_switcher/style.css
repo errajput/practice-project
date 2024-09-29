@@ -1,0 +1,21 @@
+body {
+  background-color: #212121;
+}
+h2,
+h1,
+p {
+  color: #fff;
+  text-align: center;
+}
+img {
+  max-width: 80px;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+button img {
+  cursor: pointer;
+  height: 3rem;
+}
