@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Web - UI</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="background-header">
+            <nav class="nav-container">
+                <a><img src="./images/icon.png" alt="App Name" /></a>
+
+                <div class="link-container">
+                    <a href="">Home</a>
+                    <a href="">Shop</a>
+                    <a href="">About Us</a>
+                    <a href="">Help</a>
+                </div>
+
+                <div class="cart">
+                    <a href="">
+                        <span class="item-count">00</span>
+                        <img src="./images/ion_basket.png" alt="Cart" />
+                    </a>
+                </div>
+            </nav>
+            <div class="main-header">
+                <div class="welcome-heading">
+                    <h1>
+                        Welcome to
+                        <br />
+                        <span>Pop Rock Crystal Shop!</span>
+                    </h1>
+                    <p>
+                        Here you will find unique phone accessories, crystals, jewelry and more. Free shipping inside
+                        the U.S. and our phone grips come with a limited warranty. Enjoy!
+                    </p>
+                    <button>SHOP NOW</button>
+                    <a href="">about us</a>
+                </div>
+                <div class="image">
+                    <div class="image-container">
+                        <p class="toltip">New lot</p>
+                        <img src="images/phone.jpg" alt="img is not found" />
+                    </div>
+                    <hr />
+                    <p>CRYSTAL AGATE PHONE GRIP <span>- 18.99$</span></p>
+                </div>
+            </div>
+            <div class="arrow-container">
+                <img src="images/left_arrow.jpg" alt="left move" class="leftmove" />
+                <div class="cricle">
+                    <div class="cricle1"></div>
+                    <div class="cricle2"></div>
+                    <div class="cricle3"></div>
+                    <div class="cricle4"></div>
+                    <div class="cricle5"></div>
+                    <div class="cricle6"></div>
+                    <div class="cricle7"></div>
+                </div>
+                <img src="images/right_arrow.jpg" alt="right move" class="rightmove" />
+            </div>
+            <div class="sroll-bown">
+                <img src="images/mouse.jpg" alt="" />
+                <p>sroll down</p>
+            </div>
+        </div>
+        <div class="wave"></div>
+
+        <!-- card container of products -->
+        <div class="product-container">
+            <h1>All product</h1>
+            <hr />
+            <label for="allproduct">Filter:</label>
+            <select name="product" id="product">
+                <option value="product 1">All Products</option>
+            </select>
+            <label for="selling">Sort :</label>
+            <select name="product" id="product">
+                <option value="product 1">Best Selling</option>
+            </select>
+            <div class="cards-container" id="cardsContainer"></div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
